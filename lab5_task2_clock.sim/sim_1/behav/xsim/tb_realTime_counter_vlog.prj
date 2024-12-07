@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../lab5_task2_clock.srcs/sources_1/new/Clock_Divider.sv" \
+"../../../../lab5_task2_clock.srcs/sources_1/new/ModN_Counter.sv" \
+"../../../../lab5_task2_clock.srcs/sources_1/new/Real_Time_Counter.sv" \
+"../../../../lab5_task2_clock.srcs/sources_1/new/flip_flop.sv" \
+"../../../../lab5_task2_clock.srcs/sources_1/new/nbit_counter.sv" \
+"../../../../lab5_task2_clock.srcs/sim_1/new/tb_realTime_counter.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
